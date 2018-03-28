@@ -20,9 +20,4 @@ export class IngredientsComponent implements OnInit {
       this.ingredients = ingredients;
     });
   }
-
-  /*onIngredientAdded(data) {
-    //this.ingredients.push(new Ingredient(data.name, data.amount));
-    this.ingredientsService.addIngredient(new Ingredient(data.name, data.amount))
-  }*/
 }

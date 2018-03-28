@@ -10,7 +10,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class IngredientListComponent implements OnInit {
   @Input() ingredients: Ingredient[];
 
-  constructor(private router: Router, private route: ActivatedRoute) { }
+  constructor(private router: Router, private route: ActivatedRoute) {
+  }
 
   ngOnInit() {
     console.log('my ingredients are: ', this.ingredients);
@@ -19,8 +20,4 @@ export class IngredientListComponent implements OnInit {
   editIngredient(index) {
     this.router.navigate(['edit', index], {relativeTo: this.route})
   }
-
-  /*addIngredient() {
-    this.router.navigate(['new'], {relativeTo: this.route});
-  }*/
 }

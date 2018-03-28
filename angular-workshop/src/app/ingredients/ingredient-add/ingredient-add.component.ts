@@ -30,7 +30,6 @@ export class IngredientAddComponent implements OnInit {
   }
 
   addIngredient() {
-    //this.ingredientAdded.emit({name: this.ingredientName, amount: this.ingredientAmount});
     this.ingredientsService.addIngredient(new Ingredient(this.ingredientName, this.ingredientAmount));
     this.ingredientName = this.ingredientAmount = null;
   }
